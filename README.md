@@ -1,7 +1,3 @@
----
-title: QML HBAC
-
----
 
 # Reimplementation of the Bidirectional Quantum Refrigerator (BQR) Protocol in PennyLane
 
@@ -16,7 +12,7 @@ I implemented the 2 protocol shapes proposed, which act over a randomly-rotated 
 
 The paper proposes this BQR, where unit blocks sequentialy stacked increase in size by 1 qubit, until they cover the whole circuit, and after the last unit, 2 qubits are restarted. This whole process is defined as 1 round.
 
-![BQR 1st protocol](images/BQR_first_protocol.png)
+![BQR 1st protocol](images/BQR first protocol.png)
 *Figure adapted from Rodriguez-Briones & Park (2025). Used here for educational and illustrative purposes.*
 
 Then, they introduce another version of the aforementioned protocol, only that this time, instead of increasing the units in size, they remain the same and are stacked in a staircase manner.
