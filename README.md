@@ -16,12 +16,12 @@ I implemented the 2 protocol shapes proposed, which act over a randomly-rotated 
 
 The paper proposes this BQR, where unit blocks sequentialy stacked increase in size by 1 qubit, until they cover the whole circuit, and after the last unit, 2 qubits are restarted. This whole process is defined as 1 round.
 
-![BQR 1st protocol](https://hackmd.io/_uploads/ByMtIgEUge.png)
+![BQR 1st protocol](images/BQR_first_protocol.png)
 *Figure adapted from Rodriguez-Briones & Park (2025). Used here for educational and illustrative purposes.*
 
 Then, they introduce another version of the aforementioned protocol, only that this time, instead of increasing the units in size, they remain the same and are stacked in a staircase manner.
 
-![BQR 2nd protocol](https://hackmd.io/_uploads/H1WKLlNIeg.png)
+![BQR 2nd protocol](images/image.png)
 *Figure adapted from Rodriguez-Briones & Park (2025). Used here for educational and illustrative purposes.*
 
 Both protocols were coded under the same logic, defining the unit gate first, then the round, and finally a function to sequentially apply different numbers of rounds. The main difference that for the first one, I coded the blocks to increase in size, while for the second one, I coded them to shift positions along the given circuit.
@@ -56,15 +56,15 @@ The results from the paper indicated curves where the biggest changes in polariz
 In my case, as there was no observable difference among the different number of rounds, however, the relative increase in polarization happened to be higher in my circuits with respect to the graphs shown on the paper, as an initial polarization below .1 would turn to virtually 1.
 
 
-![Polarization change 1st protocol](https://hackmd.io/_uploads/HyZt8eNUge.png)
-![Entropy change 1st protocol](https://hackmd.io/_uploads/S1bKLeNIxl.png)
+![Polarization change 1st protocol](images/Entropy_change_1st_protocol.png)
+![Entropy change 1st protocol](images/Polarization_change_1st_protocol.png)
 
 The opposite thing happened with the entropy; it would start close to 1, and end very close to zero, at a -10 order of magnitude. 
 
 It's important to mention that the quantum circuits I used were much simpler than those from the paper, and that I initialized the polarized system in a way that wouldn't allow me to control the initial entropy. On the same note, the measurements were taken over a single qubit. 
 
-![Polarization change 2nd protocol](https://hackmd.io/_uploads/HkbY8xNIle.png)
-![Entropy change 2nd protocol](https://hackmd.io/_uploads/r1bt8xVUle.png)
+![Polarization change 2nd protocol](images/Entropy_change_first_protocol.png)
+![Entropy change 2nd protocol](images/Polarization_change_2nd_protocol.png)
 
 
 
@@ -74,4 +74,4 @@ It's important to mention that the quantum circuits I used were much simpler tha
 2. Run the code from top to bottom
 3. You can change the parameters by changing the variables value. 
 
-To open directly in Colab: colab.research.google.com/drive/1ah4W7TfxLScBh6fc1DiO6zjvVAexAJRS?usp=sharing
+To open directly in Colab: colab.research.google.com/drive/1ah4W7TfxLScBh6fc1DiO6zjvVAexAJRS?usp=sharing 
