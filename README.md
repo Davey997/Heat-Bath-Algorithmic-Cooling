@@ -28,8 +28,8 @@ According to the authors, the second protoco was an easier-to-implement version,
 
 Given that the whole project is on a single Google Colab notebook, and that no datasets were used, the repository structure is rather simple: 
 
-* Project.ipynb: Google Colab notebook explaining step by step. Including diagrams from the original paper to illustrate what the code does at each step.
-* Project.py: Raw Python script of the notebook
+* HBAC BQR.ipynb: Google Colab notebook explaining step by step. Including diagrams from the original paper to illustrate what the code does at each step.
+* HBAC BQR.py: Raw Python script of the notebook
 * README.md: This file. 
 
 
