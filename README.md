@@ -12,12 +12,12 @@ I implemented the 2 protocol shapes proposed, which act over a randomly-rotated 
 
 The paper proposes this BQR, where unit blocks sequentialy stacked increase in size by 1 qubit, until they cover the whole circuit, and after the last unit, 2 qubits are restarted. This whole process is defined as 1 round.
 
-![BQR 1st protocol](images/BQR first protocol.png)
+![BQR 1st protocol](images/BQR_1st_protocol.png)
 *Figure adapted from Rodriguez-Briones & Park (2025). Used here for educational and illustrative purposes.*
 
 Then, they introduce another version of the aforementioned protocol, only that this time, instead of increasing the units in size, they remain the same and are stacked in a staircase manner.
 
-![BQR 2nd protocol](images/image.png)
+![BQR 2nd protocol](images/BQR_2nd_protocol.png)
 *Figure adapted from Rodriguez-Briones & Park (2025). Used here for educational and illustrative purposes.*
 
 Both protocols were coded under the same logic, defining the unit gate first, then the round, and finally a function to sequentially apply different numbers of rounds. The main difference that for the first one, I coded the blocks to increase in size, while for the second one, I coded them to shift positions along the given circuit.
@@ -59,7 +59,7 @@ The opposite thing happened with the entropy; it would start close to 1, and end
 
 It's important to mention that the quantum circuits I used were much simpler than those from the paper, and that I initialized the polarized system in a way that wouldn't allow me to control the initial entropy. On the same note, the measurements were taken over a single qubit. 
 
-![Polarization change 2nd protocol](images/Entropy_change_first_protocol.png)
+![Polarization change 2nd protocol](images/Entropy_change_1st_protocol.png)
 ![Entropy change 2nd protocol](images/Polarization_change_2nd_protocol.png)
 
 
